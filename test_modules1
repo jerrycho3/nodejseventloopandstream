@@ -1,0 +1,11 @@
+//module.exports
+const c = require("./calculator");
+const calc1 = new c();
+console.log(calc1.add(2, 5));
+
+//exports
+// const calc2 = require("./test_modules2");
+
+//we can also use destructuring
+const { add, multiply, divide } = require("./test_modules2");
+console.log(add(2, 5));
